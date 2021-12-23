@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hotlink</title>
+</head>
+<body>
+    <style>
+        .Btn {
+            background-color: #04AA6D;
+            border-radius: 5px;
+            font-size: 17px;
+            font-family: 'Source Sans Pro', sans-serif;
+            padding: 6px 18px;
+        }
+        .Button {
+            background-color: goldenrod;
+            color: rgb(1, 122, 96);
+            border-radius: 5px;
+            font-size: 17px;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            padding: 6px 18px;
+        }
+    </style>
+    <form>
+        <input type="submit" formaction="http://www.google.com" value="Google">
+        <input type="submit" formaction="http://www.youtube.com" value="Youtube">
+        <input type="submit" formaction="http://www.facebook.com" value="Facebook">
+    </form><br>
+   
+   
+    <button class="Btn" 
+    onclick="window.location.href = 'https://www.google.com';">
+        Google
+    </button>
+    
+    <button class="Btn"
+    onclick="window.location.href = 'http://www.youtube.com';">
+        Youtube
+    </button>
+    
+    <button class="Btn"
+    onclick="window.location.href = 'http://www.facebook.com';">
+        Facebook
+    </button><br><br>
+    
+    <a href="http://www.google.com">
+        <button class="Button">
+            Google
+        </button>
+    </a>
+
+    <a href="http://www.youtube.com">
+        <button class="Button">
+            Youtube
+        </button>
+    </a>
+
+    <a href="http://www.facebook.com">
+        <button class="Button">
+            Facebook
+        </button>
+    </a><br><br>
+    
+    <a class="Btn" href="http://www.google.com" target="_blank">Google</a>
+    <a class="Btn" href="http://www.youtube.com" target="_blank">Youtube</a>
+    <a class="Button" href="http://www.facebook.com" target="_blank">Facebook</a>
+</body>
+</html>
