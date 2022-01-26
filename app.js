@@ -1,6 +1,9 @@
-for (var counter = 0; counter<5;counter++){
-    console.log("Hello"+counter)
-    console.log("Hello World"+counter)
+let qrt = prompt("จำนวนของสินค้า")
+let sum = 0
+for(var i = 1; i<=qrt;i++)
+{
+    let item_price = prompt("ราคาสินค้าชิ้นที่" + i)
+    sum = sum + parseInt (item_price)
+    document.getElementById("price-list").innerHTML += "รายการสินค้าชิ้นที่ "+i + ": " + item_price+" บาท"+"<br>"
 }
-
-console.log("Exit")
+document.getElementById("result").innerHTML = "ราคารวม"+sum+"บาท"
